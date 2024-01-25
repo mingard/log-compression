@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package logcompression;
+
+option go_package = "github.com/mingard/log-compression/logcompressionpb";
+
+message LogMessage {
+  string timestamp = 1;
+  string level = 2;
+  string message = 3;
+}
+
+message CompressionMapping {
+  map<string, int32> enumMapping = 1;
+}
+
+service LogCompressionService {
+  rpc CompressLog(LogMessage) returns (CompressionMapping);
+}
