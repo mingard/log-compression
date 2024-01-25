@@ -2,6 +2,12 @@ syntax = "proto3";
 
 package logcompression;
 
+option java_multiple_files = true;
+option java_package = "ex.grpc";
+option objc_class_prefix = "LOG";
+
+option go_package = "./logcompressionpb";
+
 message LogMessage {
   string timestamp = 1;
   string level = 2;
