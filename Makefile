@@ -1,12 +1,3 @@
-#      _             _  _
-#   __| |  __ _   __| |(_)
-#  / _` | / _` | / _` || |
-# | (_| || (_| || (_| || |
-#  \__,_| \__,_| \__,_||_|
-#
-# DADI Decentralized Cloud
-# (c) 2018 DADI Cloud Ltd.
-
 GOCMD=go
 GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
